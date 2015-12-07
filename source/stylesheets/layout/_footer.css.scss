@@ -1,1 +1,28 @@
-// Your footer style
+.footer
+{
+  background: $gray-darker;
+  color: $gray-lighter;
+  padding: 30px 0;
+
+  a
+  {
+    font-size: 30px;
+    color: $green;
+    letter-spacing: 20px;
+    trainsition: color 0.5s ease;
+    &:hover
+      {
+        color: $red;
+      }
+  }
+  p
+  {
+    margin-top: 17px;
+  }
+  ul
+  {
+    margin-top: 10px;
+  }
+}
+
+
