@@ -9243,6 +9243,28 @@ button.close {
 .fa-meanpath:before {
   content: ""; }
 
+@keyframes appearIn {
+  0% {
+    opacity: O; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes appearIn {
+  0% {
+    opacity: O; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes appearIn {
+  0% {
+    opacity: O; }
+  100% {
+    opacity: 1; } }
+/* line 26, /Users/Romain/Documents/stylus/source/stylesheets/layout/_animation.css.scss */
+.appearIn {
+  opacity: 0;
+  animation: appearIn 2s 0.5s ease forwards;
+  -webkit-animation: appearIn 2s 0.5s ease forwards;
+  -moz-animation: appearIn 2s 0.5s ease forwards; }
+
 /* line 1, /Users/Romain/Documents/stylus/source/stylesheets/layout/_footer.css.scss */
 .footer {
   background: #222222;
@@ -9419,6 +9441,19 @@ button.close {
   background: #6452BD;
   color: white; }
 
+/* line 5, /Users/Romain/Documents/stylus/source/stylesheets/components/_button.css.scss */
+.btn-rounded {
+  border-radius: 50px;
+  padding: 0.6em 1.5em;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease; }
+  /* line 13, /Users/Romain/Documents/stylus/source/stylesheets/components/_button.css.scss */
+  .btn-rounded:hover {
+    opacity: 0.8; }
+
 /* line 1, /Users/Romain/Documents/stylus/source/stylesheets/pages/_home.css.scss */
 .banner {
   background-image: url("../images/background2.jpg");
@@ -9436,6 +9471,16 @@ button.close {
     font-weight: lighter;
     font-style: normal;
     padding: 20px 0; }
+
+/* line 24, /Users/Romain/Documents/stylus/source/stylesheets/pages/_home.css.scss */
+.banner i {
+  position: absolute;
+  font-size: 50px;
+  width: 100px;
+  text-align: center;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -50px; }
 
 /*
 ==============================================
